@@ -35,7 +35,7 @@ public class VideoUrlController extends CustomController{
 		return result;
 	}
 	
-	@ApiOperation(value="列表")
+	@ApiOperation(value="列表.")
 	@PostMapping(value="list")
 	public String list(@RequestBody VideoListParam param) {
 		runLog.info("列表,param="+param.toString());
