@@ -1,4 +1,4 @@
-package com.magic.vider.util;
+package com.magic.video.util;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;

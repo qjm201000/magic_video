@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.magic.video.config.DefaultConfig;
 import com.magic.video.param.VideoFilterListParam;
 import com.magic.video.param.VideoListParam;
-import com.magic.vider.util.HttpClient;
+import com.magic.video.util.HttpClient;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

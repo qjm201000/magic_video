@@ -1,4 +1,4 @@
-package com.magic.vider.util;
+package com.magic.video.util;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
