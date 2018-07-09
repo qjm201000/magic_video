@@ -29,24 +29,6 @@ public class DefaultConfig {
 	private String videoFilter;
 	@Value(value="${video.filterlist}")
 	private String videoFilterlist;
-	
-	@Value("${wx.authorizeUrl}")
-	private String wxAuthorizeUrl;
-	@Value(value="${wx.codeConnectUrl}")
-	private String wxCodeConnectUrl;
-	@Value(value="${wx.pay.invalid.time}")
-	private String wxPayInvalidTime;
-	
-
-	public String getWxAuthorizeUrl() {
-		return wxAuthorizeUrl;
-	}
-
-	public void setWxAuthorizeUrl(String wxAuthorizeUrl) {
-		this.wxAuthorizeUrl = wxAuthorizeUrl;
-	}
-
-	@Value("${wx.codeConnectUrl}")
 
 	public String getVideoList() {
 		return videoList;
@@ -136,19 +118,4 @@ public class DefaultConfig {
 		this.videoFilterlist = videoFilterlist;
 	}
 
-	public String getWxCodeConnectUrl() {
-		return wxCodeConnectUrl;
-	}
-
-	public void setWxCodeConnectUrl(String wxCodeConnectUrl) {
-		this.wxCodeConnectUrl = wxCodeConnectUrl;
-	}
-
-	public String getWxPayInvalidTime() {
-		return wxPayInvalidTime;
-	}
-
-	public void setWxPayInvalidTime(String wxPayInvalidTime) {
-		this.wxPayInvalidTime = wxPayInvalidTime;
-	}
 }
