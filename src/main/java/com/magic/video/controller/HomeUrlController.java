@@ -32,8 +32,9 @@ public class HomeUrlController extends CustomController{
 	@ApiOperation(value="首页中的tab种类列表（1：电影2：电视剧3：综艺4：动漫5：少儿）")
 	@PostMapping(value="tableKind")
 	public String homeTableKind(Integer tid) {
-		runLog.info("首页中的tab电视剧列表。");
+		runLog.info("首页中的tab种类列表。tid="+tid);
 		String url = String.format(defaultConfig.getHomeTabKind(), new Object[] {tid});
+		runLog.info("url="+url);
 		String result = HttpClient.client(url, HttpMethod.GET, null);
 		result = result.substring(result.indexOf("{"));
 		runLog.info("根据url获取json数据,result="+result);
