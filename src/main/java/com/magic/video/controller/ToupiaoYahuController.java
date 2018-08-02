@@ -54,7 +54,7 @@ public class ToupiaoYahuController extends CustomController{
     			int random=(int) (Math.random()*1000+2000);
     			System.out.println("随机时间："+random);
     			try {
-					Thread.sleep(random);
+					Thread.sleep(random);//
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
